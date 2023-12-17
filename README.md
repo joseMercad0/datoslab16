@@ -1,4 +1,4 @@
-Descargar esto en este enlace:
+Descargar esto en este enlace y ponerlo en la carpeta raiz:
 
 https://grouplens.org/datasets/movielens/
 
