@@ -1,0 +1,21 @@
+<!-- templates/recommendations.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendations</title>
+</head>
+<body>
+    <h2>Recommendations for User {{ recommendations[0]['user_id'] }}, Movie {{ recommendations[0]['movie_id'] }}:</h2>
+    {% for recommendation in recommendations %}
+        <p>
+            Movie {{ recommendation['movie_id'] }} Recommendations:
+            {% for movie in recommendation['recommendations'] %}
+                <br>
+                - Movie {{ movie['movie_id'] }}, Rating {{ movie['rating'] }}, Distance {{ movie['distance'] }}
+            {% endfor %}
+        </p>
+    {% endfor %}
+</body>
+</html>
